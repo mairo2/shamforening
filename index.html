@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="function.js"></script>
+    <script src="function.js">
+    </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="Images/ShammIcon.png">
     <title>
@@ -18,37 +19,72 @@
         <img src="Images/ShammIcon.png" alt="Logo" class="logoImage">
         <span class="logo-text"><i class="fas fa-light" style="margin-right: 0.2em; font-size: 0.4em;"></i><span
                 style="color: red; font-size: 0.4em;">Shamm</span><span style="font-size: 0.4em;">Förening</span></span>
+
     </div>
     <div class="site-tab">
-        <button class="tablinks" onclick="openCity(event, 'Start')">Start</button>
-        <button class="tablinks" onclick="openCity(event, 'Activity')">Aktiviteter</button>
-        <button class="tablinks" onclick="openCity(event, 'About')">Om oss</button>
-        <button class="tablinks" onclick="openCity(event, 'Contact')">Kontakta oss</button>
+        <button id="startBtn" class="tablinks" onclick="OpenTab(event, 'Start')">Start</button>
+        <button class="tablinks" onclick="OpenTab(event, 'Activity')">Aktiviteter</button>
+        <button class="tablinks" onclick="OpenTab(event, 'About')">Om oss</button>
+        <button class="tablinks" onclick="OpenTab(event, 'Contact')">Kontakta oss</button>
     </div>
-
     <section class="site-section">
-        <!-- Tab content -->
         <div id="Start" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
+            <h3>2023</h3>
+            <p>
+                Välkommen till Shamm föreningens hemsida! <br>
+                Årsmötet hölls den 11 februari i Kiresebergs lokal i Malmö.
+
+
+            </p>
         </div>
 
         <div id="Activity" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
+            <h3>2023</h3>
+            <p>Vi har planerat att ha följande aktiviter: 
+                <ul>
+                    <li>Nowrooz fest</li>
+                    <li>Fitr fest</li>
+                    <li>Mors dags fest</li>
+                    <li>Adha fest</li>
+                    <li>Halloween fest</li>
+                </ul>
+            </p>
+            <p>Andra aktiviteter:
+                <ul>
+                    <li>Footboll</li>
+                    <li>Volleyboll</li>
+                    <li>Simning (damer)</li>
+                    <li>Simning (herrar)</li>
+                    <li>Bowling (vid förfrågan)</li>
+                    <li>Grill</li>
+                    <li>Resa till Ullared</li>
+                </ul>
+            </p>
         </div>
         <div id="About" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <h3>Ideel förening</h3>
+            <p>Shamm förening är en ideel och kulturell förening som bildades år 2000.</p>
         </div>
         <div id="Contact" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <h3>Kontakt personer</h3>
+            <h2><br>Ordförande</h2>
+            <p>Rohn Sahlin <br> rohan.sahlin@hotmail.com</p>
+            <h2><br>Fotboll</h2>
+            <p>Jonas Asadullah <br> jonas8911@gmail.com</p>
+            <h2><br>Volleyboll</h2>
+            <p>Esmatullah Kazimi <br> esmatullah.kazimiq@gmail.com</p>
+            <h2><br>Simning (Damer)</h2>
+            <p>Masooma Amini <br> masooma.amini@yahoo.com</p>
+            <h2><br>Simning (Herrar)</h2>
+            <p>Mohammad Shah Rajabi <br> shah2017@hotmail.com</p>
         </div>
     </section>
 </body>
 
 
+<script type="text/javascript">
+    document.getElementById('startBtn').click();
+</script>
 
 
 
