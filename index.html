@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link href="myTheme.css" rel="stylesheet" type="text/css"> -->
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" >
-        <title>
-            Sham föreningen
-        </title>
-    </head>
-    <body>
-<nav class="navBar">
-    <div class="community">
-        <div class="activity"></div>
-        <div class="aboutUs"></div>
-        <div class="contact"></div>
-    </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="function.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="Images/ShammIcon.png">
+    <title>
+        Shamm
+    </title>
+</head>
+
+<body>
     <div class="logo">
-        <span class="logo-text"><i class="fa fa-book" style="margin-right: 0.2em; font-size: 0.4em;"></i><span style="color: red; font-size: 0.4em;">Sham </span><span style="font-size: 0.4em;">förening</span></span>
+        <img src="Images/ShammIcon.png" alt="Logo" class="logoImage">
+        <span class="logo-text"><i class="fas fa-light" style="margin-right: 0.2em; font-size: 0.4em;"></i><span
+                style="color: red; font-size: 0.4em;">Shamm</span><span style="font-size: 0.4em;">Förening</span></span>
     </div>
-    <div class="tabBar">
-        <ul class="list">
-            <li class="list-items"><a href="#">Start</a></li>
-            <li class="list-items"><a href="#">Aktiviteter</a></li>
-            <li class="list-items"><a href="#">Om oss</a></li>
-            <li class="list-items"><a href="#">Kontakta oss</a></li>
-            <li class="list-items"><a href="#">         </a></li>
-        </ul>
+    <div class="site-tab">
+        <button class="tablinks" onclick="openCity(event, 'Start')">Start</button>
+        <button class="tablinks" onclick="openCity(event, 'Activity')">Aktiviteter</button>
+        <button class="tablinks" onclick="openCity(event, 'About')">Om oss</button>
+        <button class="tablinks" onclick="openCity(event, 'Contact')">Kontakta oss</button>
+    </div>
+
+    <section class="site-section">
+        <!-- Tab content -->
+        <div id="Start" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="Activity" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+        </div>
+        <div id="About" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="Contact" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+    </section>
+</body>
+
+
+
+
+
+
 
 </html>
