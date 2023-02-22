@@ -76,11 +76,20 @@ ul{
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+    padding: 50px;
+    border: 5px solid #ccc;
+    border-top: 45em;
   }
 
+  .tabcontent li{
+    padding-left: 20px;
+    padding-top: 8px;
+  }
+
+  .tabcontent p{
+    padding-left: 20px;
+    padding-top: 8px;
+  }
 
 
 
@@ -139,41 +148,13 @@ ul{
     height: calc(100vh - 10vh);
     width: 100%;
     background: url("Images/BlueLight.jpg") center center/cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     top: 0;
     left: 0;
     z-index: -1;
 }
-/* 
-.section1 .banner{
-    height: 170px;
-    width: 600px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-family: sans-serif;
-    z-index: 8;
-}
-
-.banner h1{
-    font-size: 2em;
-}
-
-.banner a{
-    display: flex;
-    justify-content: center;
-    padding: 1em 2.5em;
-    font-size: 0.8em;
-    color: white;
-    background: orange;
-    transition: all 0.3;
-} */
-
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
     .logo{
         padding-left: 0;
     }
@@ -232,18 +213,4 @@ ul{
         color: blue;
     }
 
-}
-
-/* menu bar */
-
-.menu-sidebar{
-    display: none;
-}
-
-.fa-times{
-    margin-top: 0.5em;
-}
-
-.none{
-    display: none;
-}
+} */
