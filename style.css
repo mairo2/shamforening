@@ -42,8 +42,6 @@ ul{
     margin-left: 8.5em;
 }
 
-
-/* Style the tab */
 .site-tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -51,7 +49,6 @@ ul{
     
   }
   
-  /* Style the buttons that are used to open the tab content */
   .site-tab button {
     background-color: inherit;
     float: left;
@@ -63,17 +60,14 @@ ul{
     font-family: fantasy;
   }
   
-  /* Change background color of buttons on hover */
   .site-tab button:hover {
     background-color: #ddd;
   }
   
-  /* Create an active/current tablink class */
   .site-tab button.active {
     background-color: #ccc;
   }
   
-  /* Style the tab content */
   .tabcontent {
     display: none;
     padding: 50px;
@@ -90,59 +84,6 @@ ul{
     padding-left: 20px;
     padding-top: 8px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .list{
-    display: flex;
-    justify-content: space-between;
-}
-
-.list-items a{
-    color: brown;
-    font-family: fantasy;
-    font-size: 1.2em;
-    transition: 0.4s;
-    font-style: italic;
-}
-.list-items a:hover{
-    color: black;
-}
-
-.burger{
-    height: 28px;
-    width: 32;
-    display: none;
-    color: #c4c8cf;
-}
-
-.activity, .aboutUs, .contact{
-    background: black;
-    height: 4px;
-    margin-top: 4px;
-    width: 100%;
-    border-radius: 10px;
-} */
 
 .site-section{
     height: calc(100vh - 10vh);
@@ -162,88 +103,4 @@ ul{
         box-sizing: border-box;
         font-size: 15px;
     }
-    
-    html{
-        scroll-behavior: smooth;
-    }
-    
-    a{
-        text-decoration: none;
-    }
-    
-    ul{
-        list-style: none;
-    }
-    
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 10vh;
-        background-color: #c4c8cf;
-        width: 100vw;
-    }
-    .logo{
-        padding-left: 2em;
-    }
-    .logoImage{
-        width: 8%;
-        height: auto;
-    }
-    .logo-text{
-        font-size: 4em;
-    
-    }
-    
-    .menubar{
-        width: 45%;
-        margin-left: 8.5em;
-    }
-
-    .site-tab {
-        overflow: hidden;
-        border: 1px solid #ccc;
-        background-color: #f1f1f1;
-        
-      }
-      
-      /* Style the buttons that are used to open the tab content */
-      .site-tab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 12px 14px;
-        transition: 0.3s;
-        font-family: fantasy;
-      }
-      
-      /* Change background color of buttons on hover */
-      .site-tab button:hover {
-        background-color: #ddd;
-      }
-      
-      /* Create an active/current tablink class */
-      .site-tab button.active {
-        background-color: #ccc;
-      }
-      
-      /* Style the tab content */
-      .tabcontent {
-        display: none;
-        padding: 50px;
-        border: 5px solid #ccc;
-        border-top: 45em;
-      }
-    
-      .tabcontent li{
-        padding-left: 20px;
-        padding-top: 8px;
-      }
-    
-      .tabcontent p{
-        padding-left: 20px;
-        padding-top: 8px;
-      }
 }
