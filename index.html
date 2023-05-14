@@ -19,13 +19,13 @@
         <img src="Images/ShammIcon.png" alt="Logo" class="logoImage">
         <span class="logo-text"><i class="fas fa-light" style="margin-right: 0.2em; font-size: 0.4em;"></i><span
                 style="color: red; font-size: 0.4em;">Shamm</span><span style="font-size: 0.4em;">Förening</span></span>
-
     </div>
     <div class="site-tab">
         <button id="startBtn" class="tablinks" onclick="OpenTab(event, 'Start')">Start</button>
         <button class="tablinks" onclick="OpenTab(event, 'Activity')">Aktiviteter</button>
         <button class="tablinks" onclick="OpenTab(event, 'About')">Om oss</button>
         <button class="tablinks" onclick="OpenTab(event, 'Contact')">Kontakta oss</button>
+        <audio controls loop src="Audio/shammGuitar.mp3" id="music"></audio>
     </div>
     <section class="site-section">
         <div id="Start" class="tabcontent">
@@ -79,9 +79,11 @@
                     <p>Lördag den 18:e mars</p>
                 </li>
                 <li>Fitr fest (bestämd)
-                    <p>Lördag den 22:a april</p></li>
+                    <p>Lördag den 22:a april</p>
+                </li>
                 <li>Mors dags fest (bestämd)
-                    <p>Lördag den 28:e maj</p></li>
+                    <p>Lördag den 28:e maj</p>
+                </li>
                 <li>Adha fest</li>
                 <li>Halloween fest</li>
             </ul>
@@ -109,7 +111,7 @@
         <div id="About" class="tabcontent">
             <h3>Ideel förening</h3>
             <p><br>Shamm förening är en ideel och kulturell förening som bildades år 2005, <br>
-            i Malmö, Sverige.
+                i Malmö, Sverige.
             </p>
         </div>
         <div id="Contact" class="tabcontent">
@@ -127,19 +129,22 @@
             <h2><br>Föreningens facebook grupp</h2>
             <a href="https://www.facebook.com/groups/163628340676141">Klicka här för att besöka vår facebook grupp</a>
         </div>
+        <div id="Listen" class="tabcontent">
+            <h3>Lyssna på några avslappnande musik</h3>
+            <p><br>Spellistan kommer att spelas <br>
+
+            </p>
+        </div>
         <footer class="footer">
             <p>Föreningens styrelse <br>Uppdaterad Mars 2023 <br><br></p>
         </footer>
     </section>
-
 </body>
-
 
 <script type="text/javascript">
     document.getElementById('startBtn').click();
+    var music = document.getElementById("music");
+    music.volume = 0.1;
 </script>
-
-
-
 
 </html>

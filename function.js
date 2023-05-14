@@ -1,4 +1,4 @@
-function OpenTab(evt, cityName) {
+function OpenTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -15,10 +15,17 @@ function OpenTab(evt, cityName) {
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 function OpenDefaultTab(evt) {
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+}
+
+function PlayMusic(){
+    let play = document.getElementById("play");
+    let audio = new Audio("audio.mp3");
+    audio.play()
+    play.addEventListener("click", PlayMusic())
 }
