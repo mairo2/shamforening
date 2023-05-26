@@ -114,6 +114,10 @@ ul {
   padding: 20px;
 }
 
+.weather{
+  margin: auto;
+}
+
 .footer{
     text-align: right;
     padding-top: 20px;
