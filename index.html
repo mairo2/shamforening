@@ -25,8 +25,8 @@
         <button class="tablinks" onclick="OpenTab(event, 'Activity')">Aktiviteter</button>
         <button class="tablinks" onclick="OpenTab(event, 'About')">Om oss</button>
         <button class="tablinks" onclick="OpenTab(event, 'Contact')">Kontakta oss</button>
+        <button class="tablinks" onclick="OpenTab(event, 'Membership')">Bli Medlem</button>
         <audio controls autoplay loop src="Audio/shammGuitar.mp3" id="music"></audio>
-
     </div>
     <section class="site-section">
         <div id="Start" class="tabcontent">
@@ -138,12 +138,19 @@
             <h2><br>Föreningens facebook grupp</h2>
             <a href="https://www.facebook.com/groups/163628340676141">Klicka här för att besöka vår facebook grupp</a>
         </div>
-        <div id="Listen" class="tabcontent">
+        <div id = "Membership" class="tabcontent">
+            <h3>Bli medlem</h3>
+            <h2>Fyll i följande förmulär nedan och sedan tryck på "Skicka" knappen!</h2><br>
+            <label>Familjens efternamn<br></label>
+            <input type="text" id="familyName" name="familyName" placeholder="Familjens efternamn"><br><br>
+            <label for="numberOfDropDown">Antal personer</label><br>
+            <select id="numberOfDropDown" onchange="CreateDynamicForms()"></select> <!-- Create the method-->
+        </div>
+        <!-- <div id="Listen" class="tabcontent">
             <h3>Lyssna på några avslappnande musik</h3>
             <p><br>Spellistan kommer att spelas <br>
-
             </p>
-        </div>
+        </div> -->
         <footer class="footer">
             <p>Föreningens styrelse <br>Uppdaterad Augusti 2023 <br><br></p>
             <p class="weather" id="weather"></p>
@@ -155,6 +162,15 @@
     document.getElementById('startBtn').click();
     var music = document.getElementById("music");
     music.volume = 0.1;
+</script>
+<script>
+    var dropdown = document.getElementById("numberOfDropDown");
+    for (var i=1; i<=10; i++){
+        var option = document.createElement("option");
+        option.value = i;
+        option.text = i;
+        dropdown.appendChild(option);
+    }
 </script>
 
 </html>
