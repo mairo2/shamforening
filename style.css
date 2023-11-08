@@ -89,6 +89,14 @@ ul {
   padding-top: 8px;
 }
 
+.dynamicForms{
+  display: none;
+  padding: 100px;
+  height: max-content;
+  border: 5px solid #ccc;
+  border-top: 45em;
+}
+
 .site-section {
   min-height: calc(100vh - 10vh);
 
