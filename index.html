@@ -143,14 +143,12 @@
             <h2>Fyll i följande förmulär nedan och sedan tryck på "Skicka" knappen!</h2><br>
             <label>Familjens efternamn<br></label>
             <input type="text" id="familyName" name="familyName" placeholder="Familjens efternamn"><br><br>
+            <label>Adress<br></label>
+            <input type="text" id="familyName" name="familyName" placeholder="Familjens efternamn"><br><br>
             <label for="numberOfDropDown">Antal personer</label><br>
-            <select id="numberOfDropDown" onchange="CreateDynamicForms()"></select> <!-- Create the method-->
+            <select id="numberOfDropDown" onchange="CreateDynamicForms(Event, this.value)"></select> <!-- Create the method-->
         </div>
-        <!-- <div id="Listen" class="tabcontent">
-            <h3>Lyssna på några avslappnande musik</h3>
-            <p><br>Spellistan kommer att spelas <br>
-            </p>
-        </div> -->
+        <div id="dynamicFormsContainer" class="dynamicForms"></div>
         <footer class="footer">
             <p>Föreningens styrelse <br>Uppdaterad Augusti 2023 <br><br></p>
             <p class="weather" id="weather"></p>
@@ -172,5 +170,4 @@
         dropdown.appendChild(option);
     }
 </script>
-
 </html>
